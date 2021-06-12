@@ -1,0 +1,27 @@
+# main links
+main:
+  - title: "Overview"
+    url: /overview
+  - title: "Docs"
+    url: /documentation
+  - title: "FAQ"
+    url: https://faq.arc42.org
+  - title: "Examples"
+    url: /examples
+  - title: "Training"
+    url: /learn
+  - title: "Download"
+    url: /download
+  - title: "About"
+    url: /about
+
+about:
+  - title: About arc42
+    url: /about
+    children:
+    - title: "Contact"
+      url: /contact
+    - title: "Contributors"
+      url: "https://github.com/orgs/arc42/people"
+    - title: "License"
+      url: "/license"

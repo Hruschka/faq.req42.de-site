@@ -14,15 +14,19 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en"
-title                    : "req42"
+title                    : "arc42"
 title_separator          : "-"
-name                     : "Dr. Peter Hruschka"
-description              : "Resources for requirements engineers."
-url                      : "https://req42.de" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Dr. Gernot Starke, Dr. Peter Hruschka"
+description              : "Resources for software architects."
+url                      : "https://arc42.de" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "req42/docs.req42.org-site" # GitHub username/repo-name
-teaser                   : /images/arc42-splash-landingpage.jpg # path of fallback teaser image, e.g. "/images/500x300.png"
+repository               : "arc42/docs.arc42.org-site" # GitHub username/repo-name
+teaser                   :  # path of fallback teaser image, e.g. "/images/500x300.png"
+
+search: true
+
 breadcrumbs            : false # true, false (default)
+
 words_per_minute         : 200
 comments:
   provider               : false # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -30,7 +34,7 @@ comments:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
 atom_feed:
-  path                   : https://it-and-more.blogspot.com
+  path                   : 
 
 # SEO Related
 google_site_verification :
@@ -43,7 +47,7 @@ twitter:
 
 social:
   type                   : Organization # Person or Organization (defaults to Person)
-  name                   : req42 # If the user or organization name differs from the site's name
+  name                   : arc42 # If the user or organization name differs from the site's name
 
 # Analytics
 analytics:
@@ -64,7 +68,7 @@ author:
   google_plus      :
   stackoverflow    :
   twitter          : arc42Tipps
-  xing             : arc42
+  xing             : 
 
 # Reading Files
 include:
@@ -95,8 +99,6 @@ exclude:
   - Dockerfile
   - _manage-site.sh
   - _docker*
-  - zz-site/
-  - _site/
   - includes/subtle-ads/logo
   - includes/subtle-ads/*.sh
 
@@ -199,8 +201,10 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
+      author_profile: false
+      read_time: false
       comments: false
-      share: true
-      related: true
+      share: false
+      related: false
+        
+        

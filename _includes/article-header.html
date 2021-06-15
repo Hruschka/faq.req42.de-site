@@ -2,23 +2,26 @@
 
 <header>
     <div class="panel">
-        <h2>
+        <h3>
             {% if include.link %}
             <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
             {% else %}
             {{ page.title }}
             {% endif %}
-        </h2>
+        </h3>
 
         <ul class="tags">
             {% assign tags_num = (page.tags | size) %}
             {% if tags_num > 0 %}
-            <li><i class="fa fa-tags"></i></li>
+                <i class="fa fa-tags"></i>
             {% endif %}
+
             {% for tag in page.tags %}
-            <li>
-                <a class="tag" href="{{ '/search/?t=' | append: tag | prepend: site.baseurl }}">#{{ tag }}</a>
-            </li>
+            
+                
+            <div><a href="{{ '/search/?t=' | append: tag | prepend: site.baseurl }}" class="btn btn--inverse">{{ tag }}</a></div>
+                
+            
             {% endfor %}
         </ul>
 

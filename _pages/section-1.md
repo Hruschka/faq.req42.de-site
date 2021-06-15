@@ -1,5 +1,5 @@
 ---
-layout: tip
+layout: single
 title: 1 - Introduction and Goals
 permalink: /section-1/
 

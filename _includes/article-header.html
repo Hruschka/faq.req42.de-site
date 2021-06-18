@@ -19,7 +19,7 @@
             {% for tag in page.tags %}
             
                 
-            <div><a href="{{ '/search/?t=' | append: tag | prepend: site.baseurl }}" class="btn btn--inverse">{{ tag }}</a></div>
+                <a href="{{ '/search/?t=' | append: tag | prepend: site.baseurl }}" class="btn btn--info btn-small">{{ tag }}</a>
                 
             
             {% endfor %}

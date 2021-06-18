@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Docs"
-    url: /documentation
+    url: /
   - title: "FAQ"
-    url: /faq
+    url: /faqs
   - title: "Tips"
     url: /tips
   - title: "Training"
@@ -13,7 +13,7 @@ main:
 
 template-nav:
   - title: Template docs
-    url: /documentation
+    url: /
     children:
     - title: "01: Introduction+Goals"
       url: /section-1
@@ -39,6 +39,33 @@ template-nav:
       url: "/section-11"
     - title: "12: Glossary"
       url: "/section-12"
+
+
+faq-nav:
+  - title: Frequenty Asked Questions
+    url: /faqs
+    children:
+    - title: "A: General questions"
+      url: "/category_a"
+    - title: "B: Methodology"
+      url: "/category_b"      
+    - title: "C: arc42 Sections"
+      url: "/category_c"      
+    - title: "D: Notations"
+      url: "/category_d"      
+    - title: "E: arc42 and Agile"
+      url: "/category_e"      
+    - title: "F: Tools"
+      url: "/category_f"      
+    - title: "G: Versioning"
+      url: "/category_g"      
+    - title: "H: Traceability"
+      url: "/category_h"      
+    - title: "J: Management"
+      url: "/category_j"      
+    - title: "K: Customizing"
+      url: "/category_k"      
+  
 
 about:
   - title: About arc42

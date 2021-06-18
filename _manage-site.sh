@@ -44,11 +44,11 @@ case "$choice" in
                      ;;
 
   d|D|dev|develop) echo "develop, incremental build"
-                   docker-compose --file _docker-compose-dev.yml up
+                   docker compose --file _docker-compose-dev.yml up
                    ;;
 
   r|R|remove) echo "remove running docker container"
-             docker-compose --file _docker-compose-dev.yml down
+             docker compose --file _docker-compose-dev.yml down
              ;;
 
   

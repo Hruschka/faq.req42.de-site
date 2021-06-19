@@ -195,7 +195,6 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -206,5 +205,27 @@ defaults:
       comments: false
       share: false
       related: false
+  - scope:
+      path: ""
+      type: "faqs"
+    values:
+        layout: tip      
+        author_profile: false
+        read_time: false
+        comments: false
+        share: false
+        related: false
+        classes: wide
+        header:
+          overlay_color: "#004F94"
+          caption: "Need [**support**](https://arc42.de)?"
+        sidebar:
+          nav: "faq-nav"
+
+
+
         
         
+collections:
+  faqs:
+    output: true

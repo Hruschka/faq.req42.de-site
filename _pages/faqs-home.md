@@ -12,18 +12,18 @@ sidebar:
   nav: "faq-nav"
 ---
 
-{% assign categoryA_posts = site.posts | where: "category", "general" %}
+{% assign categoryA_posts = site.faqs | where: "category", "general" %}
 {% assign zorg = categoryA_posts.size %}
 
-{% assign categoryB_posts = site.posts | where: "category", "method" %}
-{% assign categoryC_posts = site.posts | where_exp: "post", "post.category contains 'section'" %}
-{% assign categoryD_posts = site.posts | where: "category", "modeling" %}
-{% assign categoryE_posts = site.posts | where: "category", "agile" %}
-{% assign categoryF_posts = site.posts | where: "category", "tools" %}
-{% assign categoryG_posts = site.posts | where: "category", "versions" %}
-{% assign categoryH_posts = site.posts | where: "category", "traceability" %}
-{% assign categoryJ_posts = site.posts | where: "category", "management" %}
-{% assign categoryK_posts = site.posts | where: "category", "customizing" %}
+{% assign categoryB_posts = site.faqs | where: "category", "method" %}
+{% assign categoryC_posts = site.faqs | where_exp: "post", "post.category contains 'section'" %}
+{% assign categoryD_posts = site.faqs | where: "category", "modeling" %}
+{% assign categoryE_posts = site.faqs | where: "category", "agile" %}
+{% assign categoryF_posts = site.faqs | where: "category", "tools" %}
+{% assign categoryG_posts = site.faqs | where: "category", "versions" %}
+{% assign categoryH_posts = site.faqs | where: "category", "traceability" %}
+{% assign categoryJ_posts = site.faqs | where: "category", "management" %}
+{% assign categoryK_posts = site.faqs | where: "category", "customizing" %}
 
 
 Here you find answers for the most common questions regarding arc42, organized by the following cagegories:

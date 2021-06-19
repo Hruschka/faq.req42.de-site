@@ -1,18 +1,19 @@
 
 {% comment %}
-   This loop collects the FAQ documents from the posts.
-   TODO: restrict to those posts that really are FAQ...
+   This loop collects the FAQ documents.
+   It relies on the collection "faqs"
+   See 
 {% endcomment %}
 
 
 
 <div id="search-results">
-    {% assign selected_posts = site.posts | where: "category", include.category | reverse %}
-    {% for post in selected_posts  %}
+    {% assign selected_faqs = site.faqs | where: "category", include.category | reverse %}
+    {% for faq in selected_faqs  %}
   
     <div class="article-wrapper">
         <article>
-            {% include article-header.html page=post link=true share=false %}
+            {% include article-header.html page=faq link=true share=false %}
         </article>    
     </div>
     

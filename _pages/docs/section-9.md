@@ -36,7 +36,7 @@ Stakeholders of your system should be able to comprehend and retrace your decisi
 _&lt;describe important architecture decisions here >_
 
 
-{% include further-info.md
+{% include collect-section-info.md
    category="decisions"
    topic="fundamental architecture and design decisions"
    faqlink="http://faq.arc42.org/category_c/#c-sec-9" %}

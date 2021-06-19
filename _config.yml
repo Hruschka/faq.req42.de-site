@@ -197,7 +197,6 @@ compress_html:
 defaults:
   - scope:
       path: ""
-      type: posts
     values:
       layout: single
       author_profile: false
@@ -205,27 +204,33 @@ defaults:
       comments: false
       share: false
       related: false
+      excerpt: ""
   - scope:
       path: ""
       type: "faqs"
     values:
         layout: tip      
-        author_profile: false
-        read_time: false
-        comments: false
-        share: false
-        related: false
         classes: wide
         header:
           overlay_color: "#004F94"
           caption: "Need [**support**](https://arc42.de)?"
         sidebar:
           nav: "faq-nav"
+  - scope:
+      path: ""
+      type: "tips"
+    values:
+        layout: tip      
+        classes: wide
+        header:
+          overlay_color: "#1A7BB7"
+          caption: "Need [**support**](https://arc42.de)?"
+        sidebar:
+          nav: "template-nav"
 
-
-
-        
         
 collections:
   faqs:
+    output: true
+  tips:
     output: true

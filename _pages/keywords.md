@@ -1,0 +1,44 @@
+---
+layout: single
+title: All tips (by keyword)
+permalink: /keywords/
+classes: wide
+header:
+    overlay_color: "#004F94"
+    caption: "Need [**support**](https://arc42.de)?"
+sidebar:
+    nav: "template-nav"
+---
+
+
+
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+<!-- site_tags: {{ site_tags }} -->
+{% assign tag_words = site_tags |  split:',' | sort %}
+<!-- tag_words: {{ tag_words }} -->
+
+<!-- if-else fixes issue #18 -->
+<div id="tags">
+  <ul class="tag-box inline">
+  {% for tag in tag_words %}
+    {% if tag == "lean" || tag == "essential" || tag=="thorough" %}
+       <li><a href="#{{ tag | cgi_escape }}"><font color="#dd354b"><b>{{ tag }}</b>
+       <span>{{ site.tags[tag] | size }}</span></a></font>
+    {% else %}
+        <li><a href="#{{ tag | cgi_escape }}">{{ tag }}
+        <span>{{ site.tags[tag] | size }}</span></a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+  <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
+  <ul class="posts">
+    {% assign sorted_posts = (site.tags[this_word] | sort_by: 'title' ) | reverse %}
+    {% for post in sorted_posts %}{% if post.title != null %}
+    <li> <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}{% endfor %}
+  </ul>
+  {% endunless %}{% endfor %}
+</div>

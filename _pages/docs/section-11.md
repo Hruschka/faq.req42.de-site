@@ -32,7 +32,7 @@ List of risks and/or technical debts, probably including suggested measures to m
 
 _&lt;insert list or table of known problems, risks or technical debt >_
 
-{% include further-info.md
+{% include collect-section-info.md
    category="risks"
    topic="risks, problems and technical debt"
    faqlink="http://faq.arc42.org/category_c/#c-sec-11" %}

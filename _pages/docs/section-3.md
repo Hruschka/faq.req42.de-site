@@ -73,7 +73,7 @@ E.g. UML deployment diagram describing channels to neighboring systems, together
 #### _&lt;insert mapping of input/output to channels>_
 
 
-{% include further-info.md
+{% include collect-section-info.md
    category="context"
    topic="context, scope and external interfaces"
    faqlink="http://faq.arc42.org/category_c/#c-sec-3" %}

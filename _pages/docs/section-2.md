@@ -35,7 +35,7 @@ Simple tables of constraints with explanations. If needed you can subdivide them
 #### _&lt;insert relevant constraints>_
 
 
-{% include further-info.md
+{% include collect-section-info.md
    category="constraints"
    topic="constraints"
    faqlink="https://faq.arc42.org/category_c/#c-sec-2" %}

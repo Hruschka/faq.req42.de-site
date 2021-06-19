@@ -1,21 +1,42 @@
 ---
-title: "Debug + Status"
+title: "Status (for debugging)"
 layout: single
-permalink: /debug-status
+permalink: /status
 header:
   overlay_image: /images/splash/splash-debug-status.jpg
   overlay_filter: rgba(255, 0, 0, 0.5)
-
-excerpt: "{{ site.pages | size }} pages" 
 ---
 
-# Pages
+# Statistics
 
-<font color="#dd354b">{{ site.pages | size }}</font> pages in this site.
+| Element  | Count  |
+| ---------|-------:|
+| pages    | {{ site.pages | size }} |
+| posts    | {{ site.posts | size }} |
+| FAQ      | {{ site.faqs | size }}  |
 
-# Posts
 
-<font color="#dd354b">{{ site.posts | size }}</font> posts in this site.
+# FAQ
+### Tags within FAQS
 
-{% assign selected_posts = site.posts | where: "category", include.category | reverse %}
+{% assign tags =  site.faqs | map: 'tags' | join: ','  | split: ',' | uniq %}
+
+<div>
+<font color="#dd354b">{{ tags | size }}</font> tags within FAQs.
+</div>
+
+
+### List of FAQ-tags
+
+
+{% for tag in tags %}
+  {{ tag }} 
+  <ul>
+  {% for faq in site.faqs %}
+    {% if faq.tags contains tag %}
+    <li><a href="{{ site.baseurl }}{{ faq.url }}">{{ faq.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %}  
 

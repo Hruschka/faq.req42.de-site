@@ -1,15 +1,23 @@
 
+
+{% comment %}
+   This loop collects the tip documents.
+   It relies on the collection "tips"
+   See https://jekyllrb.com/docs/collections/
+{% endcomment %}
+
+
 <hr>
 
 # Related Tips
 
 <div id="search-results">
-    {% assign selected_posts = site.posts | where: "category", include.category | reverse %}
-    {% for post in selected_posts  %}
+    {% assign selected_tips = site.tips | where: "category", include.category  %}
+    {% for tip in selected_tips  %}
   
     <div class="article-wrapper">
         <article>
-            {% include article-header.html page=post link=true share=false %}
+            {% include article-header.html page=tip link=true share=false %}
         </article>    
     </div>
     

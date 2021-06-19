@@ -2,13 +2,13 @@
 {% comment %}
    This loop collects the FAQ documents.
    It relies on the collection "faqs"
-   See 
+   See https://jekyllrb.com/docs/collections/
 {% endcomment %}
 
 
 
 <div id="search-results">
-    {% assign selected_faqs = site.faqs | where: "category", include.category | reverse %}
+    {% assign selected_faqs = site.faqs | where: "category", include.category  %}
     {% for faq in selected_faqs  %}
   
     <div class="article-wrapper">

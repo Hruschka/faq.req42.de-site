@@ -41,7 +41,7 @@ You should clearly define your terms, so that all stakeholders
 _&lt;insert glossary (and optionally translation) table >_
 
 
-{% include further-info.md
+{% include collect-section-info.md
    category="glossary"
    topic="glossary and terms"
    faqlink="http://faq.arc42.org/category_c/#c-sec-12" %}

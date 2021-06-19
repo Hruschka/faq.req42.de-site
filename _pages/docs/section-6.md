@@ -58,7 +58,7 @@ building block instances depicted in this diagram. >_
 #### 6.n _&lt;Runtime Scenario n>_
 
 
-{% include further-info.md
+{% include collect-section-info.md
    category="runtime"
    topic="runtime scenarios"
    faqlink="http://faq.arc42.org/category_c/#c-sec-6" %}

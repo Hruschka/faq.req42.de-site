@@ -61,7 +61,7 @@ on this list.
 _&lt;describe concepts here >_
 
 
-{% include further-info.md
+{% include collect-section-info.md
    category="concepts"
    topic="crosscutting and/or technical concepts"
    faqlink="http://faq.arc42.org/category_c/#c-sec-8" %}

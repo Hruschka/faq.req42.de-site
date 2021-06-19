@@ -188,6 +188,6 @@ _< insert white box template of building block x.2 >_
 _< insert white box template of building block y.1 >_
 
 
-{% include further-info.md category="building-block"
+{% include collect-section-info.md category="building-block"
    topic="building blocks, blackbox, whitebox and interfaces"
    faqlink="http://faq.arc42.org/category_c/#c-sec-5" %}

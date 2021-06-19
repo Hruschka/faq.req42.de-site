@@ -107,7 +107,7 @@ _&lt; insert diagram + explanation >_
 ##### 7.2.n _&lt; Infrastructure element 1>_
 _&lt; insert diagram + explanation >_
 
-{% include further-info.md
+{% include collect-section-info.md
    category="deployment"
    topic="technical infrastructure, hardware, environments or deployment"
    faqlink="http://faq.arc42.org/category_c/#c-sec-7" %}

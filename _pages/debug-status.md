@@ -7,23 +7,22 @@ header:
   overlay_filter: rgba(255, 0, 0, 0.5)
 ---
 
+{% assign faqtags =  site.faqs | map: 'tags' | join: ','  | split: ',' | uniq %}
 # Statistics
 
 | Element  | Count  |
 | ---------|-------:|
 | pages    | {{ site.pages | size }} |
 | posts    | {{ site.posts | size }} |
-| FAQ      | {{ site.faqs | size }}  |
+| faqs      | {{ site.faqs | size }}  |
+| faq-tags | <font color="#dd354b">{{ faqtags | size }}</font> |
+| tips     | {{ site.tips | size }} |
+| tips-tags | |
 
 
-# FAQ
+# Tags and Categories
 ### Tags within FAQS
 
-{% assign tags =  site.faqs | map: 'tags' | join: ','  | split: ',' | uniq %}
-
-<div>
-<font color="#dd354b">{{ tags | size }}</font> tags within FAQs.
-</div>
 
 
 ### List of FAQ-tags
@@ -31,12 +30,5 @@ header:
 
 {% for tag in tags %}
   {{ tag }} 
-  <ul>
-  {% for faq in site.faqs %}
-    {% if faq.tags contains tag %}
-    <li><a href="{{ site.baseurl }}{{ faq.url }}">{{ faq.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-  </ul>
 {% endfor %}  
 
